@@ -1,0 +1,93 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	background: red;
+}
+
+.contain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animate 16s ease-in-out infinite;  
+    background-repeat: no-repeat;
+    background-size: cover;  
+	
+}
+
+@keyframes animate {
+ 0%, 100% {
+ 	  background-image: url("https://images.unsplash.com/photo-1516918656725-e9b3ae9ee7a4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGhpJTIwcmVzb2x1dGlvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+ }
+
+ 25% {
+ 	background-image: url("https://images.unsplash.com/photo-1494249465471-5655b7878482?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZHJlYW1zfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");  
+ }
+  
+ 50% {
+ 	background-image: url("https://images.unsplash.com/photo-1542293787938-c9e299b880cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80");
+ } 
+ 
+ 75% {
+ 	background-image: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZHViYWl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+ }
+
+}
+.details {
+ position: absolute;
+ top: 40%;
+ left: 35%; 
+ font-family: 'Raleway', sans-serif;
+ font-weight: 500;		
+	}
+
+
+.jumbotron {
+  background-image: url("https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGNhbXBpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+  color: white;
+  padding-bottom: 80px; }
+  .jumbotron .btn-primary {
+    background: #845ac7;
+    border-color: #845ac7; }
+    .jumbotron .btn-primary:hover {
+      background: #7646c1; }
+  .jumbotron p {
+    color: #d9ccee;
+    max-width: 75%;
+    margin: 1em auto 2em; }
+  .navbar + .jumbotron {
+    margin-top: -20px; }
+  .jumbotron .lang-logo {
+    display: block;
+    background: #B01302;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid white; }
+    .jumbotron .lang-logo img {
+      max-width: 100%; }
+
+.dark .divide .linkss .act .links {
+	color: white;
+	margin-right: 20px;
+
+}
+
+
+
+.dark .navbar-brand{
+	color: white;
+}
+.iconic {
+	padding-right: 10px;
+	
+}
+.dark .divide .icon{
+color: white;
+display: inline;
+padding-right: 5px;	
+}
+
+

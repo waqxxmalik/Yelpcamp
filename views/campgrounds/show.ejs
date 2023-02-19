@@ -1,0 +1,56 @@
+<%- include('../partials/header') %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	
+</head>
+
+
+<div class="container" style="margin-top: 30px;">
+	<div class= "row">
+		<div class= "col-md-3">
+			<div class= "list-group">
+				<p class="lead">Yelpcamp</p>
+				<li class= "list-group-item active">Info 1</li>
+				<li class= "list-group-item">Info 2</li>
+				<li class= "list-group-item">Info 3</li>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="thumbnail">
+				<img style="width: 100%;" src="<%=campground.image%>">
+			  <div class="caption-full">
+				  <h4 class="pull-right">$9.OO/Night </h4> 
+				  <h4><a><%=campground.name%></a></h4>				  
+				<p><%=campground.description%></p>	
+				<p><em>Submitted By <%=campground.author.username%></em></p>   
+               </div>
+			   <div>
+				   <a class="btn btn-warning" href="/campgrounds/<%=campground._id%>/edit">Edit</a>
+				   <form style="display: inline" action="/campgrounds/<%=campground._id%>?_method=DELETE" method="POST">
+					   <button class="btn btn-danger">Delete</button>
+				   </form>
+				</div> 	
+			</div>
+			<div class="well">
+              <div class="text-right">
+		    	<a class="btn btn-lg btn-success " href="/campgrounds/<%=campground._id%>/comments/new"> AddNew Comment</a>
+				</div>
+			  <% campground.comments.forEach(function(comment) { %>
+			    <h4><%=comment.author.username%></h4>
+				<p><%=comment.text%></p>
+			    <div>
+				   <a class ="btn btn-warning" href="/campgrounds/<%=campground._id%>/comments/<%=comment._id%>/edit">Edit</a>
+				   <form style="display: inline" action="/campgrounds/<%=campground._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST">
+					   <button class="btn btn-danger">Delete</button>
+				   </form>
+				</div> 	  
+			<% }) %>
+			</div>
+		</div>
+	</div>	
+</div>
