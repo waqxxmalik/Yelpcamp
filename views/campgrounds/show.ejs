@@ -27,8 +27,9 @@
 				  <h4 class="pull-right">$9.OO/Night </h4> 
 				  <h4><a><%=campground.name%></a></h4>				  
 				<p><%=campground.description%></p>	
-				<p><em>Submitted By <%=campground.author.username%></em></p>   
-               </div>
+				<p><em>Submitted By <%=campground.author.username%></em></p>
+			   
+            </div>
 			   <div>
 				   <a class="btn btn-warning" href="/campgrounds/<%=campground._id%>/edit">Edit</a>
 				   <form style="display: inline" action="/campgrounds/<%=campground._id%>?_method=DELETE" method="POST">

@@ -7,6 +7,8 @@
 	 cookieParser = require("cookie-parser"),	
     flash        = require("connect-flash"),
     Campground  = require("./models/campground"),
+    Comment  = require("./models/comment"),
+   
     User        = require("./models/user"),
     session = require("express-session"),
     methodOverride = require("method-override");
